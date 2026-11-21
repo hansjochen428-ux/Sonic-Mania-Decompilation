@@ -33,10 +33,11 @@ jobs:
           export PATH=$DEVKITPRO/tools/bin:$DEVKITA64/bin:$PATH
           cmake --build build -j4
 
+      - 
       - name: Upload Switch Files
         uses: actions/upload-artifact@v4
         with:
           name: sonic-mania-switch
           path: |
-            build/*.nro
+            **/*.nro
             **/shaders
