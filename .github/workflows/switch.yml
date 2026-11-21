@@ -34,8 +34,8 @@ jobs:
           cmake --build build -j4
 
               - name: Upload Switch Files
-        uses: actions/upload-artifact@v4
-        with:
+        uses: actions/upload-artifact@v4       
+      with:
           name: sonic-mania-switch
           path: |
             **/*.nro
