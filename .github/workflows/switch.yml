@@ -32,8 +32,7 @@ jobs:
           export DEVKITA64=/opt/devkitpro/devkitA64
           export PATH=$DEVKITPRO/tools/bin:$DEVKITA64/bin:$PATH
           cmake --build build -j4
-
-      - 
+        
       - name: Upload Switch Files
         uses: actions/upload-artifact@v4
         with:
